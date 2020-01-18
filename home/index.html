@@ -13,7 +13,7 @@
 	</header>
 	<section>
 		<div class="box"><img src="../img/IMG_E1430.jpg"></div>
-		<p>The name is Samuel Osei and i am a frontend web developer. I live to create and i create to live. I see programming as an intersection of art and science, and my aim is put smiles on people's faces and display the art of programming, one line of code at a time.</p>
+		<p id="text"></p>
 		<ul class="list">
 			<a href="">creations</a>
 			<a href="">resume</a>
@@ -29,6 +29,21 @@
 				<i class="fab fa-linkedin-in"></i>
 			</a>
 		</ul>
-	</section>
-</body>
+
+		<script type="text/javascript">
+			let counter = 0;
+			let text = "The name is Samuel Osei and i am a frontend web developer. I get fulfilled whenever i see something that never existed come into fruition. I live to create and i create to live. I see programming as an intersection of art and science, and my aim is put smiles on people's faces and display the art of programming, one line of code at a time.";
+			let speed = 100;
+
+			function typeWriter() {
+				if (counter < text.length) {
+					document.getElementById("text").innerHTML += text.charAt(counter);
+					counter++;
+
+					setTimeout(typeWriter, speed);
+				}
+			 } 
+			 typeWriter();
+		</script>
+		</body>
 </html>
