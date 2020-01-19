@@ -3,17 +3,17 @@
 <head>
 	<title>Samuel Osei | developer</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="home.css">
+	<link rel="stylesheet" type="text/css" href="../css/home.css">
 	<link rel="stylesheet" type="text/css" href="file:///C:/Users/PC/Desktop/fontawesome-free-5.9.0-web/css/all.css">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
 	<header>
-		<h1><a href="homeindex.html">S A M M Y ' S  W O R L D</a></h1>
+		<h1><a href="../home/index.html">S A M M Y ' S  W O R L D</a></h1>
 	</header>
 	<section>
-		<div class="box"><img src="img/IMG_E1430.jpg"></div>
-		<p>The name is Samuel Osei and i am a frontend web developer. I live to create and i create to live. I see programming as an intersection of art and science, and my aim is put smiles on peoples faces and display the art of programming, one line of code at a time.</p>
+		<div class="box"><img src="../img/IMG_E1430.jpg"></div>
+		<p id="text"></p>
 		<ul class="list">
 			<a href="">creations</a>
 			<a href="">resume</a>
@@ -29,6 +29,21 @@
 				<i class="fab fa-linkedin-in"></i>
 			</a>
 		</ul>
-	</section>
-</body>
+
+		<script type="text/javascript">
+			let counter = 0;
+			let text = "The name is Samuel Osei and i am a frontend web developer. I get fulfilled whenever i see something that never existed come into fruition. I live to create and i create to live. I see programming as an intersection of art and science, and my aim is put smiles on people's faces and display the art of programming, one line of code at a time.";
+			let speed = 100;
+
+			function typeWriter() {
+				if (counter < text.length) {
+					document.getElementById("text").innerHTML += text.charAt(counter);
+					counter++;
+
+					setTimeout(typeWriter, speed);
+				}
+			 } 
+			 typeWriter();
+		</script>
+		</body>
 </html>
