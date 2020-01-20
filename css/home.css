@@ -60,6 +60,7 @@ section .box {
 	border-radius:50%;
 }
 
+
 section .box img {
 	background-repeat:no-repeat;
 	background-size:100%;
@@ -85,7 +86,6 @@ section .box img {
 	}
 }
 
-
 #text {
 	text-align:center;
 	margin-top:40px;
@@ -105,12 +105,12 @@ section ul {
 section .list a {
 	text-decoration:none;
 	text-decoration:none;
-	color:#fff;
+	color:#0984e3;
 	font-size:2em;
 	font-weight:900;
 	border:2px solid #fff;
 	padding:5px 30px;
-	background-color:#00ffd1;
+	background-color:#fff;
 	border-radius:50px;
 	margin-left:5px;
 
